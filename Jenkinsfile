@@ -12,7 +12,8 @@ pipline {
 
     stage('Run Script') {
       steps {
-        sh 'chom +x script.sh'
+        sh 'chmod +x script.sh'
+        sh './script.sh'
       }
     }
   }
